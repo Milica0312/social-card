@@ -1,0 +1,65 @@
+.socialcard {
+    width: 50px;
+    background-color: #9ea2a7;
+}
+.socialmedia {
+    position: relative;
+    height: 50px;
+}
+.socialicon {
+    position: relative;
+    left: 0;
+    top: 0;
+    vertical-align: middle;
+    line-height: 50px;
+    z-index: 30000000;
+}
+.socialicon img {
+    width: 100%;
+    padding: 10px;
+}
+.tw:hover, .tw .socialtxt {
+    background-color: #66cbf9;
+}
+.tw:hover .socialicontw img {
+    background-color: #4ca4d6;
+}
+.fb:hover, .fb .socialtxt {
+    background-color: #405e94;
+}
+.fb:hover .socialiconfb img {
+    background-color: #2c3e64;
+}
+.insta:hover, .insta .socialtxt {
+    background-color: #4c433e;
+}
+.insta:hover .socialiconinsta img {
+    background-color: #302b27;
+}
+.yt:hover, .yt .socialtxt {
+    background-color: #ea514b;
+}
+.yt:hover .socialiconyt img {
+    background-color: #bb3029;
+}
+.socialicon:hover ~ .socialtxt {
+    left: 0;
+    top: 0;
+    visibility: visible;
+}
+.socialtxt {
+    position: absolute;
+    left: -300px;
+    top: 0;
+    vertical-align: middle;
+    line-height: 50px;
+    width: 250px;
+    overflow: hidden;
+	color: white;
+    padding-left: 15px;
+	.socialicon:hover ~ .socialtxt {
+		left: 50px;
+		top: 0;
+		visibility: visible
+	}
+}
